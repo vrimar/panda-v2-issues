@@ -10,3 +10,4 @@ export const cssFn = css({ margin: "token(spacing.ghost)" });
 export const spacing = css({ p: "{spacing.ghost}" });
 export const jsx = () => <Box color="{colors.ghost}" />;
 export const valid = css({ color: "{colors.red.500}", border: "1px solid {colors.red.500}" });
+export const fallback = css({ margin: "token(spacing.ghost, 4px)" });
