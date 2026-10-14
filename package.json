@@ -1,0 +1,27 @@
+{
+  "name": "panda-v2-issues",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "codegen": "panda codegen --clean",
+    "issue1": "tsc -p tsconfig.issue1.json",
+    "issue1:ts59": "node node_modules/ts59/bin/tsc -p tsconfig.issue1.json",
+    "issue2": "tsc -p tsconfig.issue2.json",
+    "issue2:ts59": "node node_modules/ts59/bin/tsc -p tsconfig.issue2.json",
+    "issue3": "eslint src/issue3.jsx",
+    "issue3:css": "panda cssgen --outfile out.css"
+  },
+  "devDependencies": {
+    "@ark-ui/react": "5.39.3",
+    "@pandacss/dev": "2.2.0",
+    "@pandacss/eslint-plugin": "2.2.0",
+    "@pandacss/preset-base": "2.2.0",
+    "@pandacss/preset-panda": "2.2.0",
+    "@types/react": "19.3.0",
+    "eslint": "9.39.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "ts59": "npm:typescript@5.9.3",
+    "typescript": "7.0.2"
+  }
+}
